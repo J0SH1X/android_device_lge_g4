@@ -23,10 +23,6 @@ PRODUCT_PACKAGES += \
     fstab.g4 \
     init.device.rc
 
-PRODUCT_PACKAGES_ENG += \
-    fstab.g4 \
-    init.device.rc
-
 # Gps
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
