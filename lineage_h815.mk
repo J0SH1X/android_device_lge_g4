@@ -14,15 +14,17 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(LOCAL_PATH)/voltage.mk)
+$(call inherit-product, $(LOCAL_PATH)/lineage.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+$(call inherit-product-if-exists, vendor/lge/g4/g4-vendor.mk)
+
 # Setup device specific product configuration
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h815
-PRODUCT_NAME := voltage_h815
+PRODUCT_NAME := lineage_h815
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H815
 PRODUCT_MANUFACTURER := LGE
