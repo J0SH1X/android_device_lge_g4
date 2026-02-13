@@ -18,14 +18,9 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Init configuration
-PRODUCT_PACKAGES += \
-    fstab.g4 \
-    init.device.rc
-
 # Gps
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+    $(LOCAL_PATH)/configs/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
 PRODUCT_PACKAGES += \
     telephony-ext \
